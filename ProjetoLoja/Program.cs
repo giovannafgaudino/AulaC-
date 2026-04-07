@@ -22,6 +22,8 @@ builder.Services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
